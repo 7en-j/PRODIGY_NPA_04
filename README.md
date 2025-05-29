@@ -75,6 +75,50 @@ Enter IP to filter (press Enter to skip): 8.8.8.8
 Enter port to filter (press Enter to skip): 53
 This will only capture packets to/from 8.8.8.8 on port 53 (DNS).
 
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/network-packet-sniffer.git
+cd network-packet-sniffer
+Make the script executable:
+
+bash
+Copy
+Edit
+chmod +x filtered_sniffer.sh
+Run the script:
+
+bash
+Copy
+Edit
+sudo ./filtered_sniffer.sh
+Enter an IP or port when prompted, or leave blank to capture all traffic.
+
+⚙️ Script Options
+INTERFACE: Network interface to listen on (default is eth0, change as needed)
+
+DURATION: Duration in seconds to capture packets (default is 30)
+
+FILTER_IP: IP address to filter traffic (optional)
+
+FILTER_PORT: Port number to filter traffic (optional)
+
+📁 Output
+The captured and processed traffic is saved in filtered_packets.txt, with a readable summary for each packet captured during the session.
+✅ Example
+bash
+Copy
+Edit
+Enter IP to filter (press Enter to skip): 8.8.8.8
+Enter port to filter (press Enter to skip): 53
+This will only capture packets to/from 8.8.8.8 on port 53 (DNS).
+
+
+
+
+
 ⚠️ Disclaimer
 This tool is intended for educational and authorized use only. Capturing network traffic without permission may violate privacy laws or organizational policies. Use responsibly.
 
